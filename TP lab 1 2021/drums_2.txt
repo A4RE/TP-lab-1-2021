@@ -1,0 +1,8 @@
+Drums start
+<Nasirov~Vladislav~Andreevich~Membranofoni~Buben~50.500000~1>
+<Kovalenko~Andrei~Alexeevich~Membranofoni~Barabani~150.000000~1>
+<Korolev~Konstantin~Mihailovich~Idiofon~Treugolnik~10.000000~1>
+<Ivanov~Mihail~Petrovich~Membranogon~Tom-Tom~40.000000~1>
+<Maslova~Lilia~Sergeevna~Membranofoni~Tarelki~60.000000~1>
+<Militenko~Alexandr~Andreevich~Idiofon~Marimba~300.000000~1>
+Drums end
