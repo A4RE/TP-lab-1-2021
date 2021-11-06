@@ -2,16 +2,16 @@
 Drums::Drums() : Base()
 {
 	type = "Empty";
-	cout << "Class Drums made\n";
+	cout << "Класс Drums создан\n";
 }
 Drums::Drums(int a) : Base(1)
 {
 	set_type();
-	cout << "Class Drums made\n";
+	cout << "Класс Drums создан\n";
 }
 void Drums::set_type()
 {
-	cout << "Enter type of drum instrument:\n";
+	cout << "Введите тип ударного инструмента:\n";
 	cin.ignore(32767, '\n');
 	cin >> type;
 
@@ -26,11 +26,11 @@ string Drums::get_type()
 }
 Drums::~Drums()
 {
-	cout << "Class Drums deleted\n";
+	cout << "Класс Drums удален\n";
 }
 string Drums::All_fields_to_string()
 {
-	return "Owner: " + this->get_last_name() + " " + this->get_name() + " " + this->get_middle_name() + " Type: " + this->get_type() + " Name of instrument: " + this->get_title() + " Price: " + to_string(this->get_price()) + " Count: " + to_string(this->get_count()) + "\n";
+	return "Владелец: " + this->get_last_name() + " " + this->get_name() + " " + this->get_middle_name() + " Тип: " + this->get_type() + " Название: " + this->get_title() + " Стоимость: " + to_string(this->get_price()) + " К-во: " + to_string(this->get_count()) + "\n";
 }string Drums::All_fields_to_string_to_save()
 {
 	return  "<" + this->get_last_name() + "~" + this->get_name() + "~" + this->get_middle_name() + "~" +  this->get_type() + "~" + this->get_title()+ "~" + to_string(this->get_price()) + "~" + to_string(this->get_count()) + ">\n";

@@ -3,17 +3,17 @@ Stringed_instruments::Stringed_instruments() : Base()
 {
 	manufacturer = "Empty";
 	description = "Empty";
-	cout << "Class Stringed_instruments made\n";
+	cout << "Класс Stringed_instruments создан\n";
 }
 Stringed_instruments::Stringed_instruments(int a) : Base(1)
 {
 	set_manufacturer();
 	set_description();
-	cout << "Class Stringed_instruments made\n";
+	cout << "Класс Stringed_instruments создан\n";
 }
 void Stringed_instruments::set_manufacturer()
 {
-	cout << "Enter manufacture:\n";
+	cout << "Введите название производителя:\n";
 	cin.ignore();
 	getline(cin, manufacturer);
 
@@ -29,7 +29,7 @@ string Stringed_instruments::get_manufacturer()
 void Stringed_instruments::set_description()
 {
 
-	cout << "Enter short description\nWrite in one string, after push Enter\n";
+	cout << "Введите краткое текстовое описание\nПишите все в одну строку, для завершения нажмите клавишу Enter\n";
 	cin.ignore();
 	getline(cin, description);
 
@@ -46,11 +46,11 @@ string Stringed_instruments::get_description()
 }
 Stringed_instruments::~Stringed_instruments()
 {
-	cout << "Class Stringed_instruments was deleted\n";
+	cout << "Класс Stringed_instruments удален\n";
 }
 string Stringed_instruments::All_fields_to_string()
 {
-	return "Owner: " + this->get_last_name() + " " + this->get_name() + " " + this->get_middle_name() + " " + "Name of instrument: "+  this->get_title() + " Price: " + to_string(this->get_price()) + " Count: " + to_string(this->get_count()) + " Manufacture: " + this->get_manufacturer() + " Description: " + this->get_description() + "\n";
+	return "Владелец: " + this->get_last_name() + " " + this->get_name() + " " + this->get_middle_name() + " " + "Название: "+  this->get_title() + " Цена: " + to_string(this->get_price()) + " К-во: " + to_string(this->get_count()) + " Производитель: " + this->get_manufacturer() + " Описание: " + this->get_description() + "\n";
 }
 string Stringed_instruments::All_fields_to_string_to_save()
 {

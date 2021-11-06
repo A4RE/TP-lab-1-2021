@@ -2,26 +2,26 @@
 Base::Base()
 {
 	last_name = "Empty";
-	name = "Empty";
 	middle_name = "Empty";
+	name = "Empty";
 	title = "Empty";
 	price = -500;
 	count = -600;
-	cout << "Base class made!\n";
+	cout << "Базовый класс создан!\n";
 }
 Base::Base(int parametr)
 {
 	set_last_name();
-	set_name();
 	set_middle_name();
+	set_name();
 	set_title();
 	set_price();
 	set_count();
-	cout << "Base class made!\n";
+	cout << "Базовый класс создан!\n";
 }
 void Base::set_last_name()
 {
-	cout << "Enter Last name:\n";
+	cout << "Введите фамилию владельца:\n";
 	cin.ignore(32767, '\n');
 	cin >> last_name;
 }
@@ -34,9 +34,24 @@ string Base::get_last_name()
 	return last_name;
 }
 
+void Base::set_middle_name()
+{
+	cout << "Введите отчество владельца:\n";
+	cin.ignore(32767, '\n');
+	cin >> middle_name;
+}
+void Base::set_middle_name(char* buffer)
+{
+	middle_name = (string)buffer;
+}
+string Base::get_middle_name()
+{
+	return middle_name;
+}
+
 void Base::set_name()
 {
-	cout << "Enter name:\n";
+	cout << "Введите имя владельца:\n";
 	cin.ignore(32767, '\n');
 	cin >> name;
 }
@@ -49,24 +64,9 @@ string Base::get_name()
 {
 	return name;
 }
-
-void Base::set_middle_name()
-{
-	cout << "Enter middle name:\n";
-	cin.ignore(32767, '\n');
-	cin >> middle_name;
-}
-void Base::set_middle_name(char* buffer)
-{
-	middle_name = (string)buffer;
-}
-string Base::get_middle_name()
-{
-	return middle_name;
-}
 void Base::set_title()
 {
-	cout << "Enter name of instrument:\n";
+	cout << "Введите название инструмента:\n";
 	cin.ignore(32767, '\n');
 	cin >> title;
 }
@@ -82,14 +82,14 @@ string Base::get_title()
 
 void Base::set_price()
 {
-	cout << "Enter price of instrument\nAttention, price mast be larger than 0:\n";
+	cout << "Введите цену инструмента\nПомните, цена не может быть меньше нуля:\n";
 	float buffer;
 	do
 	{
 		cin >> buffer;
 		if (buffer < 0)
 		{
-			cout << "Price can't be negative!Enter again\n";
+			cout << "Цена не может быть отрицательной!Введите еще раз\n";
 		}
 	} while (buffer < 0);
 	price = buffer;
@@ -104,14 +104,14 @@ float Base::get_price()
 }
 void Base::set_count()
 {
-	cout << "Enter count of instruments in orchestr\nAttention, num mast be larger than 0:\n";
+	cout << "Введите количество инструментов в оркестре\nПомните, количество не может быть отрицательным:\n";
 	float buffer = 0;
 	do
 	{
 		cin >> buffer;
 		if (buffer < 0)
 		{
-			cout << "Count can't be negative!Enter again\n";
+			cout << "Количество не может быть отрицательным!Введите еще раз\n";
 		}
 	} while (buffer < 0);
 	count = buffer;
@@ -126,5 +126,5 @@ int Base::get_count()
 }
 Base::~Base()
 {
-	cout << "Base object deleted!\n";
+	cout << "Базовый объект удален!\n";
 }

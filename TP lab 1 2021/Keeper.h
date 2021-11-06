@@ -49,7 +49,7 @@ Keeper<T>::Keeper()
 	size = 0;
 
 	data = nullptr;
-	cout << "Keeper is made!\n";
+	cout << "Контейнер создан!\n";
 }
 template <typename T>
 Keeper<T>::Keeper(int size)
@@ -58,12 +58,12 @@ Keeper<T>::Keeper(int size)
 	if (size >= 0)
 	{
 		data = new T[size];
-		cout << "Keeper is made!\n";
+		cout << "Контейнер создан!\n";
 	}
 	else
 	{
 		data = nullptr;
-		cout << "Keeper can't be negative length!\n";
+		cout << "Контейнер не может быть отрицательной длины!\n";
 		system("pause");
 		exit(1);
 	}
@@ -74,7 +74,7 @@ Keeper<T>::~Keeper()
 	delete_all_elements();
 	size = 0;
 	free(data);
-	cout << "Keeper deleted!\n";
+	cout << "Контейнер удален!\n";
 }
 
 template <typename T>
@@ -147,7 +147,7 @@ void Keeper<T>::add(T* value, int index)
 {
 	if (index < 0 || index > size)
 	{
-		cout << "Position in class Keeper empty!\n";
+		cout << "Позиция в классе Keeper отсутствует!\n";
 
 	}
 
@@ -171,7 +171,7 @@ void Keeper<T>::delete_element(int index)
 {
 	if (index < 0 || index > size)
 	{
-		cout << "Position in class Keeper empty!\n";
+		cout << "Позиция в классе Keeper отсутствует!\n";
 
 	}
 
@@ -212,15 +212,15 @@ template <typename T>
 void Keeper<T>::save_drums()
 {
 	string filename;
-	cout << "List of supported resolutions: - txt,doc. File name must include drums\n";
-	cout << "Enter full way to file:\n";
+	cout << "Список поддерживаемых разрешений - txt,doc. Важно - в название файла должна быть надпись drums\n";
+	cout << "Введите полный путь к файлу:\n";
 	cin >> filename;
 	const char* filename2 = filename.c_str();
 	char* buffer = (char*)calloc(4, 4 * sizeof(char*));
 	buffer[0] = filename2[(strlen(filename2) - 3)];
 	buffer[1] = filename2[(strlen(filename2) - 2)];
 	buffer[2] = filename2[(strlen(filename2) - 1)];
-	const char* my_exception = "File can't be opened.\n";
+	const char* my_exception = "Не удается открыть файл для сохранения.\n";
 	if (strstr(filename.c_str(), "drums") != 0)
 	{
 		if (strcmp(buffer, "txt") == 0 || strcmp(buffer, "doc"))
@@ -244,13 +244,13 @@ void Keeper<T>::save_drums()
 			}
 			catch (const char* my_exception)
 			{
-				cout << "file can't be opened.\n" << " " << " !" << filename << "!\n";
+				cout << "Не удается открыть файл для сохранения.\n" << " " << " !" << filename << "!\n";
 			}
 		}
 	}
 	else
 	{
-		cout << "Resolution isn't supported!\n";
+		cout << "Разрешение не поддерживается!\n";
 		system("pause");
 
 	}
@@ -260,16 +260,16 @@ template <typename T>
 void Keeper<T>::load_drums()
 {
 	string filename;
-	cout << "List of supported resolutions: - txt,doc. File name must include drums\n";
-	cout << "Enter full way to file:\n";
+	cout << "Список поддерживаемых разрешений - txt,doc. Важно - в название файла должна быть надпись drums\n";
+	cout << "Введите полный путь к файлу:\n";
 	cin >> filename;
 	const char* filename2 = filename.c_str();
 	char* buffer = (char*)calloc(4, 4 * sizeof(char*));
 	buffer[0] = filename2[(strlen(filename2) - 3)];
 	buffer[1] = filename2[(strlen(filename2) - 2)];
 	buffer[2] = filename2[(strlen(filename2) - 1)];
-	const char* my_exception = "File can't be opened.\n";
-	const char* my_exception2 = "File consist extra information!\n";
+	const char* my_exception = "Не удается открыть файл для чтения.\n";
+	const char* my_exception2 = "Ой! Что то пошло не так! Похоже, файл содержит лишнюю информацию!\n";
 	if (strstr(filename.c_str(), "drums") != 0)
 	{
 		if (strcmp(buffer, "txt") == 0 || strcmp(buffer, "doc") == 0)
@@ -386,7 +386,7 @@ void Keeper<T>::load_drums()
 						delete_all_elements();
 						throw my_exception2;
 					}
-					cout << "File is ready!\n";
+					cout << "Файл успешно загружен!\n";
 					system("pause");
 				}
 				catch (const char* my_exception2)
@@ -398,14 +398,14 @@ void Keeper<T>::load_drums()
 			}
 			catch (const char* my_exception)
 			{
-				cout << "File can't be opened.\n" << " " << " !" << filename << "!\n";
+				cout << "Не удается открыть файл для загрузки.\n" << " " << " !" << filename << "!\n";
 				system("pause");
 			}
 		}
 	}
 	else
 	{
-		cout << "Resolution isn't supported!\n";
+		cout << "Разрешение не поддерживается!\n";
 		system("pause");
 
 	}
@@ -415,8 +415,8 @@ template <typename T>
 void Keeper<T>::save_stringed()
 {
 	string filename;
-	cout << "List of supported resolutions: - txt,doc. File name must include stringed\n";
-	cout << "Enter full way to file:\n";
+	cout << "Список поддерживаемых разрешений - txt,doc. Важно - в имени файла должно быть написано stringed\n";
+	cout << "Введите полный путь к файлу:\n";
 	cin >> filename;
 	const char* filename2 = filename.c_str();
 	char* buffer = (char*)calloc(4, 4 * sizeof(char*));
@@ -424,7 +424,7 @@ void Keeper<T>::save_stringed()
 	buffer[1] = filename2[(strlen(filename2) - 2)];
 	buffer[2] = filename2[(strlen(filename2) - 1)];
 
-	const char* my_exception = "File can't be opened.\n";
+	const char* my_exception = "Не удается открыть файл для сохранения.\n";
 	if (strstr(filename.c_str(), "stringed") != 0)
 	{
 		if (strcmp(buffer, "txt") == 0 || strcmp(buffer, "doc"))
@@ -448,13 +448,13 @@ void Keeper<T>::save_stringed()
 			}
 			catch (const char* my_exception)
 			{
-				cout << "File can't be opened.\n" << " " << " !" << filename << "!\n";
+				cout << "Не удается открыть файл для сохранения.\n" << " " << " !" << filename << "!\n";
 			}
 		}
 	}
 	else
 	{
-		cout << "Resolution isn't supported!\n";
+		cout << "Разрешение не поддерживается!\n";
 		system("pause");
 
 	}
@@ -464,16 +464,16 @@ template <typename T>
 void Keeper<T>::load_stringed()
 {
 	string filename;
-	cout << "List of supported resolutions: - txt,doc. File name must include stringed\n";
-	cout << "Enter full way to file:\n";
+	cout << "Список поддерживаемых разрешений - txt,doc. Важно - в название файла должна быть надпись stringed\n";
+	cout << "Введите полный путь к файлу:\n";
 	cin >> filename;
 	const char* filename2 = filename.c_str();
 	char* buffer = (char*)calloc(4, 4 * sizeof(char*));
 	buffer[0] = filename2[(strlen(filename2) - 3)];
 	buffer[1] = filename2[(strlen(filename2) - 2)];
 	buffer[2] = filename2[(strlen(filename2) - 1)];
-	const char* my_exception = "File can't be opened.\n";
-	const char* my_exception2 = "File include extra information!\n";
+	const char* my_exception = "Не удается открыть файл для чтения.\n";
+	const char* my_exception2 = "Ой! Что то пошло не так! Похоже, файл содержит лишнюю информацию!\n";
 	if (strstr(filename.c_str(), "stringed") != 0)
 	{
 		if (strcmp(buffer, "txt") == 0 || strcmp(buffer, "doc") == 0)
@@ -600,7 +600,7 @@ void Keeper<T>::load_stringed()
 						delete_all_elements();
 						throw my_exception2;
 					}
-					cout << "File is ready!\n";
+					cout << "Файл успешно загружен!\n";
 					system("pause");
 				}
 				catch (const char* my_exception2)
@@ -611,14 +611,14 @@ void Keeper<T>::load_stringed()
 			}
 			catch (const char* my_exception)
 			{
-				cout << "File can't be opened.\n" << " " << " !" << filename << "!\n";
+				cout << "Не удается открыть файл для загрузки.\n" << " " << " !" << filename << "!\n";
 				system("pause");
 			}
 		}
 	}
 	else
 	{
-		cout << "Resolution isn't supported!\n";
+		cout << "Разрешение не поддерживается!\n";
 		system("pause");
 
 	}
@@ -628,8 +628,8 @@ template <typename T>
 void Keeper<T>::save_wind()
 {
 	string filename;
-	cout << "List of supported resolutions: - txt,doc. File name must include wind\n";
-	cout << "Enter full way to file:\n";
+	cout << "Список поддерживаемых разрешений - txt,doc. Важно - в имени файла должно быть написано wind\n";
+	cout << "Введите полный путь к файлу:\n";
 	cin >> filename;
 	const char* filename2 = filename.c_str();
 	char* buffer = (char*)calloc(4, 4 * sizeof(char*));
@@ -637,7 +637,7 @@ void Keeper<T>::save_wind()
 	buffer[1] = filename2[(strlen(filename2) - 2)];
 	buffer[2] = filename2[(strlen(filename2) - 1)];
 
-	const char* my_exception = "File can't be opened.\n";
+	const char* my_exception = "Не удается открыть файл для сохранения.\n";
 	if (strstr(filename.c_str(), "wind") != 0)
 	{
 		if (strcmp(buffer, "txt") == 0 || strcmp(buffer, "doc"))
@@ -661,13 +661,13 @@ void Keeper<T>::save_wind()
 			}
 			catch (const char* my_exception)
 			{
-				cout << "File can't be opened.\n" << " " << " !" << filename << "!\n";
+				cout << "Не удается открыть файл для сохранения.\n" << " " << " !" << filename << "!\n";
 			}
 		}
 	}
 	else
 	{
-		cout << "Resolution isn't supported!\n";
+		cout << "Разрешение не поддерживается!\n";
 		system("pause");
 
 	}
@@ -677,16 +677,16 @@ template <typename T>
 void Keeper<T>::load_wind()
 {
 	string filename;
-	cout << "List of supported resolutions: - txt,doc. File name must include wind\n";
-	cout << "Enter full way to file:\n";
+	cout << "Список поддерживаемых разрешений - txt,doc. Важно - в название файла должна быть надпись wind\n";
+	cout << "Введите полный путь к файлу:\n";
 	cin >> filename;
 	const char* filename2 = filename.c_str();
 	char* buffer = (char*)calloc(4, 4 * sizeof(char*));
 	buffer[0] = filename2[(strlen(filename2) - 3)];
 	buffer[1] = filename2[(strlen(filename2) - 2)];
 	buffer[2] = filename2[(strlen(filename2) - 1)];
-	const char* my_exception = "File can't be opened.\n";
-	const char* my_exception2 = "File include extra information!\n";
+	const char* my_exception = "Не удается открыть файл для чтения.\n";
+	const char* my_exception2 = "Ой! Что то пошло не так! Похоже, файл содержит лишнюю информацию!\n";
 	if (strstr(filename.c_str(), "wind") != 0)
 	{
 		if (strcmp(buffer, "txt") == 0 || strcmp(buffer, "doc") == 0)
@@ -811,7 +811,7 @@ void Keeper<T>::load_wind()
 						delete_all_elements();
 						throw my_exception2;
 					}
-					cout << "File is ready!\n";
+					cout << "Файл успешно загружен!\n";
 					system("pause");
 				}
 				catch (const char* my_exception2)
@@ -822,14 +822,14 @@ void Keeper<T>::load_wind()
 			}
 			catch (const char* my_exception)
 			{
-				cout << "File can't be opened.\n" << " " << " !" << filename << "!\n";
+				cout << "Не удается открыть файл для загрузки.\n" << " " << " !" << filename << "!\n";
 				system("pause");
 			}
 		}
 	}
 	else
 	{
-		cout << "Resolution isn't supported!\n";
+		cout << "Разрешение не поддерживается!\n";
 		system("pause");
 
 	}

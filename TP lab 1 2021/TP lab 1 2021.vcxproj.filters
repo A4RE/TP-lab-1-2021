@@ -38,23 +38,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Keeper.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Stringed_instruments.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="Wind_instruments.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="Node.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Base.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Drums.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="Keeper.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Stringed_instruments.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Wind_instruments.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
