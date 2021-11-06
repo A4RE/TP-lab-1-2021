@@ -1,0 +1,7 @@
+Stringed start
+<Maslova~Alexandra~Alexandrovna~guitar~200.000000~1~Akkord~Electro guitar>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+<Kotelnikova~Maria~Sergeevna~guitar~200.000000~1~Lepsy~bass guitar>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+Stringed end

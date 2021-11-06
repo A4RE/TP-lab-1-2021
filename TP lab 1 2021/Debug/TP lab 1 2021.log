@@ -1,0 +1,23 @@
+﻿  Source.cpp
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(245,23): warning C4101: my_exception: неиспользованная локальная переменная
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(213): message : во время компиляции функции-члена класс шаблон "void Keeper<Drums>::save_drums(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(239): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<Drums>::save_drums(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(16): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Keeper<Drums>"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(399,23): warning C4101: my_exception: неиспользованная локальная переменная
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(261): message : во время компиляции функции-члена класс шаблон "void Keeper<Drums>::load_drums(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(235): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<Drums>::load_drums(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(449,23): warning C4101: my_exception: неиспользованная локальная переменная
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(416): message : во время компиляции функции-члена класс шаблон "void Keeper<Stringed_instruments>::save_stringed(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(491): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<Stringed_instruments>::save_stringed(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(251): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Keeper<Stringed_instruments>"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(612,23): warning C4101: my_exception: неиспользованная локальная переменная
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(465): message : во время компиляции функции-члена класс шаблон "void Keeper<Stringed_instruments>::load_stringed(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(487): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<Stringed_instruments>::load_stringed(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(662,23): warning C4101: my_exception: неиспользованная локальная переменная
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(629): message : во время компиляции функции-члена класс шаблон "void Keeper<Wind_instruments>::save_wind(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(737): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<Wind_instruments>::save_wind(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(502): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Keeper<Wind_instruments>"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(823,23): warning C4101: my_exception: неиспользованная локальная переменная
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Keeper.h(678): message : во время компиляции функции-члена класс шаблон "void Keeper<Wind_instruments>::load_wind(void)"
+C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\TP lab 1 2021\Source.cpp(733): message : выполняется компиляция ссылки на экземпляр шаблон функции "void Keeper<Wind_instruments>::load_wind(void)"
+  TP lab 1 2021.vcxproj -> C:\Users\user\Desktop\Учеба\Технология программирвования\TP lab 1 2021\Debug\TP lab 1 2021.exe

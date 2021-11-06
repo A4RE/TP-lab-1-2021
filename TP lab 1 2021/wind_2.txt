@@ -1,0 +1,9 @@
+Wind start
+<peregorodiev~Dnail~Alexandrovich~Gormonka~200.000000~1~Noname~2 carapini>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+<Gusev~Evgenia~Andreevich~Trombon~150.000000~1~Noname~carapina>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+<Hamlov~Dmitri~Alexandrovich~Truba~200.000000~1~Buffet~no defects>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+<Empty~Empty~Empty~Empty~-500.000000~-600~Empty~Empty>
+Wind end
